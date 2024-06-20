@@ -4,7 +4,12 @@ import 'react-multi-carousel/lib/styles.css';
 import { StarIcon, SparklesIcon } from '@heroicons/react/20/solid';
 import Image from 'next/image';
 
-
+type resultProps = {
+  email: string;
+  name: string;
+  picture: string;
+  large: string;
+};
 
 const responsive = {
   desktop: {
@@ -27,20 +32,20 @@ const responsive = {
 
 
 const ReviewSlider = () => {
-  const url = `https://randomuser.me/api/?results=6`
+  const [result, setResult] = useState<resultProps[]>([]);
 
-const FetchUsers = () => {
-  const [users, setUsers] = useState([])
-
-  const fetchUserData = async () => {
-    const resp = await fetch(url)
-    const users = await resp.json()
-    setUsers(users.results)
-  }
 
   useEffect(() => {
-    fetchUserData()
-  }, [])
+    const api = async () => {
+      const data = await fetch("https://randomuser.me/api/?results=6", {
+        method: "GET"
+      });
+      const jsonData = await data.json();
+      setResult(jsonData.results);
+    };
+
+    api();
+  }, []);
 
   return (
     <Carousel
@@ -53,31 +58,13 @@ const FetchUsers = () => {
       centerMode={false}
       itemClass="item"
     >
-       {users.map((user) => {
-        const {
-          name: { title, first, last },
-          location: {
-            street: { number, name },
-            city,
-            state,
-            country,
-            postcode,
-            coordinates: { latitude, longitude },
-            timezone: { offset, description },
-          },
-          email,
-          login: { uuid, username },
-          dob: { date, age },
-          phone,
-          picture: { large },
-        } = user
-
+      {result.map((value) => {
         return (
           <div className='m-2  hover:bg-gray-700 transition-all duration-300 rounded-lg'>
             <div className='border-2 p-4 border-gray-700 rounded-xl'>
               <Image
-                src={`https:${large}`}
-                alt='image'
+                src={value.picture.large}
+                alt='user'
                 width={70}
                 height={70}
                 className='rounded-full mx-auto mt-[2rem]'
@@ -97,15 +84,14 @@ const FetchUsers = () => {
               <div>
                 <SparklesIcon className='w-[6rem] right-0 h-[6rem] text-white opacity-15 fixed' />
               </div>
-              <h1 className='text-[20px] text-center text-white mt-[2rem] font-medium'>{email}</h1>
-              <p className='text-yellow-400 text-[18px] text-center mb-[3rem]'>{first} {last}</p>
+              <h1 className='text-[20px] text-center text-white mt-[2rem] font-medium'>{value.email}</h1>
+              <p className='text-yellow-400 text-[18px] text-center mb-[3rem]'>{value.name.first} {value.name.last}</p>
             </div>
           </div>
         )
       })}
     </Carousel>
   )
-}
 };
 
 
