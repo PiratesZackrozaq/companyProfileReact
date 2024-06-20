@@ -57,9 +57,9 @@ const TeamSlider = () => {
       centerMode={false}
       itemClass="item"
     >
-      {result.map((value) => {
+      {result.map((value, idx) => {
         return (
-          <div className='m-2  hover:bg-gray-700 transition-all duration-300 rounded-lg'>
+          <div key={idx} className='m-2  hover:bg-gray-700 transition-all duration-300 rounded-lg'>
             <div className='border-2 p-4 border-gray-700 rounded-xl'>
               <Image
                 src={value.picture.large}
