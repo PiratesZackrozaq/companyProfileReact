@@ -4,11 +4,7 @@ import 'react-multi-carousel/lib/styles.css';
 import { StarIcon, SparklesIcon } from '@heroicons/react/20/solid';
 import Image from 'next/image';
 
-type resultProps = {
-  email: string;
-  name: string;
-  picture: string;
-};
+
 
 const responsive = {
   desktop: {
@@ -31,7 +27,7 @@ const responsive = {
 
 
 const ReviewSlider = () => {
-  const url = `https://randomuser.me/api`
+  const url = `https://randomuser.me/api/?results=6`
 
 const FetchUsers = () => {
   const [users, setUsers] = useState([])
