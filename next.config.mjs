@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/companyReact",
+  basePath: "/companyProfileReact",
   output: "export",
   reactStrictMode: true,
 };
 
 export default nextConfig;
+ 
