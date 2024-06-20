@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Bars3Icon } from '@heroicons/react/20/solid';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface Props {
   openNav: () => void;
@@ -26,7 +27,7 @@ const NavComp = ({ openNav }: Props) => {
     <div className={`fixed w-[100%] ${stickyCompStyle} transition-all duration-300 z-[1000] `}>
       <div className="flex items-center h-[12vh] justify-between w-[80%] mx-auto">
         <div className="font-logo text-white text-[14px]">
-          <img src="/images/logocompany.svg" alt="" />
+          <Image src="/images/logocompany.svg" alt="logo" width={280} height={280} />
         </div>
         <ul className="md:flex hidden items-center space-x-10">
           <Link className="nav__link" href="/">Home</Link>
