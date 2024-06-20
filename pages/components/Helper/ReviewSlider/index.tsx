@@ -5,10 +5,28 @@ import { StarIcon, SparklesIcon } from '@heroicons/react/20/solid';
 import Image from 'next/image';
 
 type resultProps = {
+  name: {
+    title: string;
+    first: string;
+    last: string;
+  };
+  picture: {
+    large: string;
+    medium: string;
+    thumbnail: string;
+  };
+  location: {
+    street: {
+      number: number;
+      name: string;
+    };
+    city: string;
+    state: string;
+    country: string;
+    postcode: number;
+  };
   email: string;
-  name: string;
-  picture: string;
-  large: string;
+  cell: string;
 };
 
 const responsive = {
