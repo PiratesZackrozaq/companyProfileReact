@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { StarIcon, SparklesIcon } from '@heroicons/react/20/solid';
+import Image from 'next/image';
 
 type resultProps = {
   email: string;
@@ -60,7 +61,7 @@ const TeamSlider = () => {
         return (
           <div className='m-2  hover:bg-gray-700 transition-all duration-300 rounded-lg'>
             <div className='border-2 p-4 border-gray-700 rounded-xl'>
-              <img
+              <Image
                 src={value.picture.large}
                 alt='user'
                 width={70}
