@@ -6,8 +6,8 @@ const Skills = () => {
     <div className='pt-[5rem] pb-[3rem] bg-black'>
         <div className='grid w-[80%] mx-auto grid-cols-1 lg:grid-cols-7 gap-[2rem] items-center'>
             <div className='col-span-3'>
-                <p className='heading__mini'>My Skills</p>
-                <h1 className='heading__primary'>The <span className='text-yellow-300'>Skills</span> that bring it to life</h1>
+                <p className='heading__mini'>All Servers Around The Earth</p>
+                <h1 className='heading__primary'>Popular <span className='text-yellow-300'>Servers</span> Locations</h1>
                 <p className='text-[15px] mb-[1.5rem] text-white opacity-70 mt-[1.5rem]'>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quos quod illo iste ducimus fugit adipisci dolor, assumenda minus possimus non nulla totam ipsum cumque numquam tempore eveniet velit optio.
                 </p>
@@ -19,21 +19,21 @@ const Skills = () => {
                 <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4 gap-[1rem] items-center'>
                     <div>
                         <SkillCard
-                        title="React"
+                        title="China"
                         image="/images/react.svg"
                         percent="90%"
                          />
                     </div>
                     <div>
                         <SkillCard
-                        title="HTML"
+                        title="Egypt"
                         image="/images/html.svg"
                         percent="90%"
                          />
                     </div>
                     <div>
                         <SkillCard
-                        title="CSS"
+                        title="Canada"
                         image="/images/css.svg"
                         percent="90%"
                          />

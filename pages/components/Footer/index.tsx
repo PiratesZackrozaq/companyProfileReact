@@ -8,7 +8,7 @@ const Footer = () => {
             <div className=' w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem] border-b-[1.4px] pb-5 border-gray-600 border-opacity-40'>
                 <div>
                     <div className='font-logo text-white text-[18px]'>
-                        <span className='text-[30px] md:text-[40px] text-yellow-400'>WD</span>Pirates
+                        <span className='text-[30px] md:text-[40px] text-yellow-400'>BlackPearl</span>VPN
                     </div>
                     <h1 className='text-[14px] mt-[0.5rem] text-white opacity-70'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio blanditiis voluptates corrupti esse dignissimos iure quibusdam harum culpa aspernatur, quisquam minus ea voluptatem expedita, dolorem placeat eos repellendus laborum. Iste?

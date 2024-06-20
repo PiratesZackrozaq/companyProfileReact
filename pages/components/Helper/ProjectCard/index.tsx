@@ -26,7 +26,7 @@ const ProjectCard = ({ image, title, tech1, tech2, tech3, tech4 }: Props) => {
             <div>
                 <h1 className='text-[25px] text-white'>{title}</h1>
                 <p className='text-white opacity-65 text-[15px] mt-[1rem]'>
-                    PT. WAHANACIPTA BANGUNWISMA
+                    See All Apps
                 </p>
                 <div className='mt-[1.3rem] grid-cols-2 grid sm:grid-cols-3 xl:grid-cols-4 gap-[2rem]'>
                     <h1 className='px-6 py-3 bg-blue-700 text-white rounded-lg text-center'>

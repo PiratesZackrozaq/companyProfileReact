@@ -5,16 +5,16 @@ const Project = () => {
     return (
         <div className='pt-[5rem] pb-[3rem] bg-gray-900'>
             <div className='text-center'>
-                <p className='heading__mini'>Recent Work</p>
-                <h1 className='heading__primary'>Gallery <span className='text-yellow-300'>Projects</span></h1>
+                <p className='heading__mini'>Easy Connect to modern devices and enjoy secure and private access to the internet — even on public Wi-Fi.</p>
+                <h1 className='heading__primary'>Available for all your <span className='text-yellow-300'>Devices</span></h1>
             </div>
             <ProjectCard
-                title="Company Profile"
-                tech1="HTML"
-                tech2="CSS"
-                tech3="BOOTSTRAP"
-                tech4="JAVASCRIPT"
-                image="/images/p1.png"
+                title="Quick And Simple Installation"
+                tech1="Windows"
+                tech2="Linux"
+                tech3="Android"
+                tech4="iOS"
+                image="/images/p1.jpg"
             />
         </div>
     )
