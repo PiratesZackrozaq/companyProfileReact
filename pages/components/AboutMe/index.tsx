@@ -23,7 +23,7 @@ const AboutMe = () => {
                             Connections</span>
                         </h1>
                         <p className='text-[15px] mt-[1.3rem] text-white opacity-75'>
-                            Here at Blackpearl VPN, we understand the importance of online privacy and security. In today's digital world, your data is constantly at risk. That's where our innovative VPN profile solutions come in.
+                            Here at Blackpearl VPN, we understand the importance of online privacy and security. In today&apos;s digital world, your data is constantly at risk. That's where our innovative VPN profile solutions come in.
 
                             We are a team of passionate developers and security experts dedicated to creating user-friendly and reliable VPN profiles. Our mission is to empower individuals and businesses alike to browse the internet with confidence, knowing their data is encrypted and protected.
                         </p>
