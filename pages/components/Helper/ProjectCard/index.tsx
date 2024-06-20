@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import React from 'react';
 import Image from 'next/image';
 
@@ -48,6 +48,3 @@ const ProjectCard = ({ image, title, tech1, tech2, tech3, tech4 }: Props) => {
 }
 
 export default ProjectCard
-=======
-
->>>>>>> 6abee01e2e8b72076424ab72356a91c5188a8870

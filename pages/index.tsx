@@ -19,7 +19,7 @@ const Homepage = () => {
 
   return (
     <div className="overflow-hidden">
-      <SeoHead title='LaslesVPN Landing Page' />
+      <SeoHead title='BlackPearlVPN Landing Page' />
       <NavCompMobile showNav={showNav} closeNav={closeNavHandler} />
       <NavComp openNav={showNavHandler} />
       <Hero />
